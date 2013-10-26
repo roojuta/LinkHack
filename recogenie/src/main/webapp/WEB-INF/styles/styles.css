@@ -1,0 +1,80 @@
+body {
+	background-image: url("../images/texture_grain_200x200_v2.png");
+	font-family: sans-serif;
+	line-height: 24px;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+h4 {
+	color: #666;
+	font-size: 14px;
+}
+
+div.info {
+	float: left;
+	margin: 25px 20px;
+}
+
+header#globalHeader {
+	background-image: url("../images/header.png");
+	background-size: 1290px 72px;
+	background-repeat: no-repeat;
+	display: block;
+	height: 72px;
+	margin: 0px auto;
+	width: 1290px;
+
+}
+
+div.box1 {
+	/*border:;*/
+	background-color: #fff;
+	height: 200px;
+	margin: 40px auto;
+	width: 960px;
+	
+
+	  -webkit-box-shadow: 1px 1px 2px 0px #999; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+        	  box-shadow: 1px 1px 2px 0px #999; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+
+}
+
+img.profile-pic {
+	height: 150px;
+	float: left;
+	margin: 25px 0px;
+	width: 150px;
+}
+
+
+/********************
+CLEARFIX HACK
+********************/
+
+.clearfix:before,
+.clearfix:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+}
+
+.clearfix:after {
+        clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+        *zoom: 1;
+}
+
+
+
+
+
