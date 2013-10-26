@@ -40,7 +40,7 @@ header#globalHeader {
 div.box1 {
 	/*border:;*/
 	background-color: #fff;
-	height: 400px;
+	height: 500px;
 	margin: 40px auto;
 	width: 960px;
 	
@@ -64,8 +64,18 @@ img.profile-pic {
 div.landing-page {
 	height: 80px;
 	margin: auto;
-	padding: 15px;
 	width: 565px;
+}
+
+div.logo {
+	margin: auto;
+	padding-top: 15px;
+}
+
+div.logo,
+img.logo {
+	height: 150px;
+	width: 177px;
 }
 
 input.input-large {
