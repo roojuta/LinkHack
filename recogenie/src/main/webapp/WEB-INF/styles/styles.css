@@ -97,6 +97,24 @@ div.info {
 	margin: 20px 0px 0px 20px;
 }
 
+div.meterbar,
+div.meterbar-fill {
+	height: 25px;
+}
+
+
+div.meterbar {
+	background: #e9eaeb;
+	padding: 2px;
+	width: 330px;
+}
+
+div.meterbar-fill {
+	width: 75%;
+	background: #059f29;
+	text-align: right
+}
+
 div.relationship-score {
 	display: block;
 	height: 85px;
@@ -107,9 +125,8 @@ div.relationship-score {
 	width: 330px;
 }
 
-
 div.top-box {
-	height: 320px;
+	height: 350px;
 }
 
 .criteria h2 {
