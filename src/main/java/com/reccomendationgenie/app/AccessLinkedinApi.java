@@ -1,8 +1,7 @@
-import java.util.HashMap;
-import java.util.Map.Entry;
+package com.reccomendationgenie.app;
+
 import java.util.Scanner;
 
-import org.codehaus.jackson.map.ObjectMapper;
 import org.scribe.builder.ServiceBuilder;
 import org.scribe.builder.api.LinkedInApi;
 import org.scribe.model.OAuthRequest;
@@ -23,6 +22,7 @@ public class AccessLinkedinApi
   public static void main(String[] args) throws Exception
 
   {
+	 
 
     OAuthService service =
         new ServiceBuilder().provider(LinkedInApi.class)
