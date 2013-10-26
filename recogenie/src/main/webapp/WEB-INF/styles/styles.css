@@ -80,8 +80,20 @@ button.score {
 	margin: 0px;
 }
 
+.common-background h2.label {
+	background-color: #333333;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 17px;
+	padding: 7.5px 20px;
+	vertical-align: top;
+	zoom: 1;
+}
+
 div.top-box,
-div.criteria {
+div.common-background {
 	background-color: #fff;
 	margin: 40px auto;
 	width: 960px;
@@ -89,6 +101,10 @@ div.criteria {
 	  -webkit-box-shadow: 1px 1px 2px 0px #999; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
     	  box-shadow: 1px 1px 2px 0px #999; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 
+}
+
+div.common-background {
+	height: 300px;
 }
 
 img.profile-pic,
@@ -129,24 +145,21 @@ div.top-box {
 	height: 350px;
 }
 
-.criteria h2 {
-	background-color: #333333;
-	color: #ffffff;
-	display: inline-block;
-	font-size: 13px;
-	font-weight: bold;
-	line-height: 17px;
-	padding: 7.5px 20px;
-	vertical-align: top;
-	zoom: 1;
-}
-
 
 img.profile-pic {
 	height: 150px;
 	width: 150px;
 }
 
+h3.criteria,
+div.detail {
+	padding-left: 20px;
+}
+
+h3.criteria {
+	font-weight: bold;
+	margin-top: 10px;
+}
 
 /***********************
 	LANDING PAGE
