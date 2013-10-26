@@ -1,0 +1,175 @@
+/**********************
+       GLOBAL
+**********************/
+
+body {
+	background-image: url("../images/texture_grain_200x200_v2.png");
+	font-family: sans-serif;
+	line-height: 24px;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+
+h4 {
+	color: #666;
+	font-size: 14px;
+}
+
+div.info {
+	float: left;
+	margin: 25px 20px;
+}
+
+
+header#globalHeader {
+	background-image: url("../images/header.png");
+	background-size: 1290px 72px;
+	background-repeat: no-repeat;
+	display: block;
+	height: 72px;
+	margin: 0px auto;
+	width: 1290px;
+
+}
+
+div.box1 {
+	/*border:;*/
+	background-color: #fff;
+	height: 400px;
+	margin: 40px auto;
+	width: 960px;
+	
+
+	  -webkit-box-shadow: 1px 1px 2px 0px #999; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+        	  box-shadow: 1px 1px 2px 0px #999; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+
+}
+
+img.profile-pic {
+	height: 150px;
+	float: left;
+	margin: 25px 0px;
+	width: 150px;
+}
+
+/***********************
+	LANDING PAGE
+***********************/
+
+div.landing-page {
+	height: 80px;
+	margin: auto;
+	padding: 15px;
+	width: 565px;
+}
+
+input.input-large {
+	border: 1px solid #1c87bd;
+	display: block;
+	height: 50px;
+	margin: 20px 50px;
+	width: 400px;
+
+	 -webkit-border-radius: 3px; 
+	 		-border-radius: 3px;
+}
+
+::-webkit-input-placeholder {
+   font-size: 16px;
+   line-height: 13px;
+   padding: 0px 15px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-size: 16px;
+   line-height: 13px;
+   padding: 0px 15px;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-size: 16px;
+   line-height: 13px;
+   padding: 0px 15px;  
+}
+
+:-ms-input-placeholder {  
+   font-size: 16px;
+   line-height: 13px;
+   padding: 0px 15px;  
+}
+
+button.landing-submit,
+button.landing-cancel {
+	height: 36px;
+	font-size: 16px;
+	font-weight: bold;
+	width: 80px;
+
+	 -webkit-border-radius: 3px; 
+		-border-radius: 3px;
+
+}
+
+button.landing-submit {
+	background-color: #1c87bd;
+	border: 1px solid #555555;
+	color: #ffffff;
+	margin-left: 50px;
+	text-shadow: 1px 1px 1px #000000; 
+
+	 background-color: #1c87bd;
+	 background-image: -webkit-gradient(linear, left top, left bottom, from(#1c87bd), to(#24659e)); /* Chrome, Safari 4+ */
+	 background-image: -webkit-linear-gradient(top, #1c87bd, #24659e); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+	 background-image:    -moz-linear-gradient(top, #1c87bd, #24659e); /* Firefox 3.6-15 */
+	 background-image:      -o-linear-gradient(top, #1c87bd, #24659e); /* Opera 11.10-12.00 */
+	 background-image:         linear-gradient(to bottom, #1c87bd, #24659e); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+
+
+}
+
+button.landing-cancel {
+	border: 1px solid #555555;
+	color: #282828;
+
+	 background-color: #e9eaeb;
+	 background-image: -webkit-gradient(linear, left top, left bottom, from(#e9eaeb), to(#bbbcbc)); /* Chrome, Safari 4+ */
+	 background-image: -webkit-linear-gradient(top, #e9eaeb, #bbbcbc); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+	 background-image:    -moz-linear-gradient(top, #e9eaeb, #bbbcbc); /* Firefox 3.6-15 */
+	 background-image:      -o-linear-gradient(top, #e9eaeb, #bbbcbc); /* Opera 11.10-12.00 */
+	 background-image:         linear-gradient(to bottom, #e9eaeb, #bbbcbc); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+
+
+}
+
+
+/********************
+CLEARFIX HACK
+********************/
+
+.clearfix:before,
+.clearfix:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+}
+
+.clearfix:after {
+        clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+        *zoom: 1;
+}
+
+
+
+
+
