@@ -2,6 +2,13 @@
 <head>
 	<title>RecoGenie - LinkedIn Hackathon 2013</title>
 	<link rel="stylesheet" href="../styles/styles.css" type="text/css">
+	
+	<script>
+function formReset()
+{
+document.getElementById("request").reset();
+}
+</script>
 </head>
 
 <body>
@@ -15,11 +22,11 @@
 			<div class="box1">
 				<div class="landing-page">
 					<h2 class="test">Test the Strength of a Relationship at RecoGenie<h2>
-					<form class="form-inline" method="POST">
+					<form id="request" class="form-inline" method="POST">
 						<input name="Candidate LinkedIn URL" type="text" id="candidate" class="input-large" placeholder="Candidate's LinkedIn URL">
 						<input name="Recommender LinkedIn URL" type="text" id="recommender" class="input-large" placeholder="Recommender's LinkedIn URL">
-						<button class="landing-submit" type="submit">Submit</button>
-						<button class="landing-cancel" type="cancel">Cancel</button>
+						<button class="landing submit" type="submit" href="#">Submit</button>
+						<button class="landing cancel" type="cancel" onclick="formReset()" value="Reset form">Clear</button>
 					</form>
 				</div>
 			</div>
