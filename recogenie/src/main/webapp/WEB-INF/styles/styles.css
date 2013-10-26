@@ -6,6 +6,7 @@ body {
 	background-image: url("../images/texture_grain_200x200_v2.png");
 	font-family: sans-serif;
 	line-height: 24px;
+	margin: 0px;
 }
 
 h2 {
@@ -72,35 +73,14 @@ input.input-large {
 	display: block;
 	height: 50px;
 	margin: 20px 50px;
+	font-size: 18px;
+	text-indent: 5%;
 	width: 400px;
 
 	 -webkit-border-radius: 3px; 
 	 		-border-radius: 3px;
 }
 
-::-webkit-input-placeholder {
-   font-size: 16px;
-   line-height: 13px;
-   padding: 0px 15px;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   font-size: 16px;
-   line-height: 13px;
-   padding: 0px 15px;  
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   font-size: 16px;
-   line-height: 13px;
-   padding: 0px 15px;  
-}
-
-:-ms-input-placeholder {  
-   font-size: 16px;
-   line-height: 13px;
-   padding: 0px 15px;  
-}
 
 button.landing-submit,
 button.landing-cancel {
