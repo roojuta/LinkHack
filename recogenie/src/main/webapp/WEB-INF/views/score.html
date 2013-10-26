@@ -18,26 +18,35 @@
 		<header id="globalHeader"> </header>
 
 		<div id="main">
-			<div class="box1">
-				<img class="profile-pic" src="../images/profile.jpg">
-				<div class="info">
-					<h2>Amanda Andonian ${name}</h2>
-					<h3>Writer, Designer, Developer</h3>
-					<h4>San Francisco, California | Internet</h4>
+			<div class="top-box">
+				<div class="profile">
+					<img class="profile-pic" src="../images/profile.jpg">
+					<div class="info">
+						<h2>Amanda Andonian ${name}</h2>
+						<h3>Writer, Designer, Developer</h3>
+						<h4>San Francisco, California | Internet</h4>
+					</div>
 				</div>
-				<img class="profile-pic" src="../images/profile.jpg">
-				<div class="info">
-					<h2>Robert Faulk ${name}</h2>
-					<h3>Software Developer</h3>
-					<h4>San Francisco, California | Internet</h4>
+
+				<div class="profile">
+					<img class="profile-pic clearfix" src="../images/profile2.jpg">
+					<div class="info">
+						<h2>Robert Faulk ${name}</h2>
+						<h3>Software Developer</h3>
+						<h4>San Francisco, California | Internet</h4>
+					</div>
 				</div>
+
+				<div class="relationship-score">
+					<h2>Relationship Score: ${score}</h2>
+					<button class="submit score" type="submit" href="#">Connect with Candidate</button>
+					<button class="cancel" type="cancel">Ignore</button>
+				</div>
+
 			</div>
-			<div class="score">
-				<h2>Relationship: ${score}</h2>
-				<button class="submit" type="submit" href="#">Connect with Candidate</button>
-			</div>
-			<div class="box1">
+			<div class="criteria">
 				<table class="table table-striped details">
+					<h2>Criteria</h2>
 					<tr>
 						<td><b>Criteria</b></td>
 						<td><b>Detail</b></td>

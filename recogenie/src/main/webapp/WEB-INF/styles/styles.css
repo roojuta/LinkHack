@@ -58,10 +58,6 @@ h4 {
 	font-size: 14px;
 }
 
-div.info {
-	float: left;
-	margin: 25px 20px;
-}
 
 
 header#globalHeader {
@@ -75,6 +71,70 @@ header#globalHeader {
 
 }
 
+
+/***********************
+	SCORE PAGE
+***********************/
+
+button.score {
+	margin: 0px;
+}
+
+div.top-box,
+div.criteria {
+	background-color: #fff;
+	margin: 40px auto;
+	width: 960px;
+
+	  -webkit-box-shadow: 1px 1px 2px 0px #999; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+    	  box-shadow: 1px 1px 2px 0px #999; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+
+}
+
+img.profile-pic,
+div.info {
+	float: left;
+	margin: 20px 0px 0px 20px;
+}
+
+div.relationship-score {
+	display: block;
+	height: 85px;
+	line-height: 50px;
+	margin: auto;
+	position: relative;
+	top: 25px;
+	width: 330px;
+}
+
+
+div.top-box {
+	height: 320px;
+}
+
+.criteria h2 {
+	background-color: #333333;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 17px;
+	padding: 7.5px 20px;
+	vertical-align: top;
+	zoom: 1;
+}
+
+
+img.profile-pic {
+	height: 150px;
+	width: 150px;
+}
+
+
+/***********************
+	LANDING PAGE
+***********************/
+
 div.box1 {
 	/*border:;*/
 	background-color: #fff;
@@ -87,17 +147,6 @@ div.box1 {
         	  box-shadow: 1px 1px 2px 0px #999; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 
 }
-
-img.profile-pic {
-	height: 150px;
-	float: left;
-	margin: 25px 0px;
-	width: 150px;
-}
-
-/***********************
-	LANDING PAGE
-***********************/
 
 div.landing-page {
 	height: 80px;
