@@ -2,29 +2,27 @@ package com.reccomendationgenie.app;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.net.URL;
 
 import com.google.gson.Gson;
 
 public class JsonParser {
 
-	public static void main(String[] args) {
-		
-		Gson gson = new Gson();
-		
-		try {
-			BufferedReader br = new BufferedReader(
-					new FileReader("/Users/klohia/ln/LinkHack/src/main/java/com/reccomendationgenie/app/mem.json"));
-			
-			
-			//convert the json string back to object
-			Memeber obj = gson.fromJson(br, Memeber.class);
-	 
-			System.out.println(obj);
-			
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
+	
+	public Member getMember(String name) {
+	  
+	  Gson gson = new Gson();
+	  Member member = null;
+      try {
+        URL url = getClass().getResource(name + ".json");
+          BufferedReader br = new BufferedReader(new FileReader(url.getPath()));
+          
+          //convert the json string back to object
+          member = gson.fromJson(br, Member.class);
+   
+      } catch (Exception e) {
+         e.printStackTrace();
+      }
+      return member;
 	}
 }

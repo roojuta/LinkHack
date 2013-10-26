@@ -1,6 +1,8 @@
 package com.reccomendationgenie.app;
 
-public class Date {
+public class Date
+{
 
-	String year;
+  String year;
+
 }
