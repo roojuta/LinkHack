@@ -2,6 +2,7 @@
 <head>
 	<title>RecoGenie - LinkedIn Hackathon 2013</title>
 	<link rel="stylesheet" href="../styles/styles.css" type="text/css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	
 	<script>
 function formReset()
@@ -26,7 +27,7 @@ document.getElementById("request").reset();
 				
 				<div class="landing-page">
 					<h2 class="test">Test the Strength of a Relationship at RecoGenie<h2>
-					<form id="request" class="form-inline" method="POST">
+					<form id="request" class="form-inline" action="http://localhost:8000/recommend/compare.json">
 						<input name="Candidate LinkedIn URL" type="text" id="candidate" class="input-large" placeholder="Candidate's LinkedIn URL">
 						<input name="Recommender LinkedIn URL" type="text" id="recommender" class="input-large" placeholder="Recommender's LinkedIn URL">
 						<button class="landing submit" type="submit" href="#">Submit</button>
@@ -39,7 +40,19 @@ document.getElementById("request").reset();
 
 	</div><!-- /#wrapper -->
 
-
-
+$(document).ready(function() {
+	$('#request').submit(function(event) {
+		var candidateID = $('#candidate').val();
+		var recommenderID = $('#recommender').val();
+		var json = {"candidate":candidate;"recommender":recommender};
+		
+		$.ajax({
+			url: $('#request).attr("action"),
+			data: JSON.stringify(json),
+			type: "POST",			
+		});
+	});
+});
+$('#request').submit();
 </body>
 </html>
